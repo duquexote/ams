@@ -19,11 +19,6 @@ const PracticeAreaDetailPage: React.FC = () => {
       {/* Hero Section */}
       <section className="relative py-20 bg-primary-900">
         <div className="absolute inset-0 opacity-20">
-          <img
-            src="https://images.pexels.com/photos/5668859/pexels-photo-5668859.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
-            alt="Background"
-            className="object-cover w-full h-full"
-          />
         </div>
         <div className="relative container">
           <div className="flex items-center mb-4 text-white/80">

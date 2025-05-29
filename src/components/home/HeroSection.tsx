@@ -7,7 +7,7 @@ const HeroSection: React.FC = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          src="/topo-web.jpg"
           alt="Medical Law Background"
           className="object-cover w-full h-full"
         />
@@ -36,7 +36,7 @@ const HeroSection: React.FC = () => {
             </Link>
             <Link
               to="/areas-de-atuacao"
-              className="btn btn-secondary text-white border-white/30 hover:bg-white/10"
+              className="btn border border-white text-white hover:bg-white/10"
             >
               Conheça nossos serviços
             </Link>

@@ -1,4 +1,4 @@
-import { Gavel, Stethoscope, ShieldCheck, FileText, Landmark, Briefcase, Scale, FileClock } from 'lucide-react';
+import { Gavel, Stethoscope, ShieldCheck, FileText} from 'lucide-react';
 
 export interface PracticeArea {
   id: string;

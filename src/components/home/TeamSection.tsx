@@ -4,19 +4,19 @@ import SectionTitle from '../ui/SectionTitle';
 
 const teamMembers = [
   {
-    name: 'Dr. Alexandre M. Silva',
+    name: 'Matheus Athayde',
     role: 'Sócio Fundador',
-    image: 'https://images.pexels.com/photos/5792641/pexels-photo-5792641.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/matheus.jpg',
   },
   {
-    name: 'Dra. Maria Santos',
+    name: 'Gabriela Sady',
     role: 'Sócia Fundadora',
-    image: 'https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/gabriela.jpg',
   },
   {
-    name: 'Dr. Pedro Almeida',
-    role: 'Advogado Associado',
-    image: 'https://images.pexels.com/photos/8422128/pexels-photo-8422128.jpeg?auto=compress&cs=tinysrgb&w=600',
+    name: 'Lucas Macedo',
+    role: 'Sócio Fundador',
+    image: '/lucas.jpg',
   },
 ];
 

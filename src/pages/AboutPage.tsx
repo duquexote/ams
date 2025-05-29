@@ -8,11 +8,6 @@ const AboutPage: React.FC = () => {
       {/* Hero Section */}
       <section className="relative py-20 bg-primary-900">
         <div className="absolute inset-0 opacity-20">
-          <img
-            src="https://images.pexels.com/photos/5668859/pexels-photo-5668859.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
-            alt="Background"
-            className="object-cover w-full h-full"
-          />
         </div>
         <div className="relative container">
           <div className="max-w-3xl">
@@ -51,7 +46,7 @@ const AboutPage: React.FC = () => {
               <div className="absolute -bottom-6 -left-6 w-40 h-40 bg-primary-100 rounded-lg z-0"></div>
               <div className="absolute -top-6 -right-6 w-40 h-40 bg-secondary-100 rounded-lg z-0"></div>
               <img
-                src="https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
+                src="/equipe.jpg"
                 alt="Escritório AMS Advogados"
                 className="relative z-10 w-full h-auto rounded-lg shadow-xl"
               />
@@ -112,7 +107,7 @@ const AboutPage: React.FC = () => {
           <div className="grid gap-6 mt-12 sm:grid-cols-2 lg:grid-cols-3">
             <div className="overflow-hidden rounded-lg shadow-md">
               <img
-                src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
+                src="/recepcao.jpg"
                 alt="Recepção"
                 className="w-full h-64 object-cover"
               />
@@ -124,7 +119,7 @@ const AboutPage: React.FC = () => {
 
             <div className="overflow-hidden rounded-lg shadow-md">
               <img
-                src="https://images.pexels.com/photos/1181435/pexels-photo-1181435.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
+                src="/sala-de-reuniao.jpg"
                 alt="Sala de Reuniões"
                 className="w-full h-64 object-cover"
               />
@@ -136,7 +131,7 @@ const AboutPage: React.FC = () => {
 
             <div className="overflow-hidden rounded-lg shadow-md">
               <img
-                src="https://images.pexels.com/photos/1181243/pexels-photo-1181243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
+                src="/area-de-trabalho.jpg"
                 alt="Área de Trabalho"
                 className="w-full h-64 object-cover"
               />

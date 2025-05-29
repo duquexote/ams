@@ -4,27 +4,39 @@ import ContactForm from '../components/ui/ContactForm';
 
 const teamMembers = [
   {
-    name: 'Dr. Alexandre M. Silva',
+    name: 'Matheus Athayde',
     role: 'Sócio Fundador',
-    image: 'https://images.pexels.com/photos/5792641/pexels-photo-5792641.jpeg?auto=compress&cs=tinysrgb&w=600',
-    description: 'Especialista em Direito Médico com mais de 15 anos de experiência na defesa de profissionais da saúde.',
+    image: '/matheus.jpg',
+    description: 'Advogado especializado em Direito Médico e da Saúde e em Advocacia Cível, além de possuir cursos de extensão em Saúde Suplementar, com atuação profissional há mais de 10 anos. Também é membro da Comissão Especial de Direito Médico e da Saúde da OAB/BA, autor de artigos e palestrante. Foi membro do Grupo de Pesquisa "Estudos de Casos em Direito Médico e da Saúde" da OAB/BA e coautor de obra que foi publicada a partir desses estudos.',
   },
   {
-    name: 'Dra. Maria Santos',
+    name: 'Gabriela Sady',
     role: 'Sócia Fundadora',
-    image: 'https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg?auto=compress&cs=tinysrgb&w=600',
-    description: 'Mestre em Direito da Saúde e referência em casos complexos envolvendo responsabilidade civil médica.',
+    image: '/gabriela.jpg',
+    description: 'Advogada especializada em Direito Médico e da Saúde, com mais de 9 anos de experiência. Pós-graduada em Direito Médico e Hospitalar e em Direito Público. Professora do curso de Pós-Graduação em Direito Médico e da Saúde do CERS. Defensora Dativa do CREMEB. Membro da Comissão Especial de Direito Médico e da Saúde da OAB/BA. Autora de artigos científicos e capítulos de livros publicados. Organizadora e autora das obras "Diálogos consensuais em Direito Médico" e "Estudo de Casos em Direito Médico e da Saúde". Coordenadora de Grupos de Pesquisa na área de Direito Médico e da Saúde.',
   },
   {
-    name: 'Dr. Pedro Almeida',
-    role: 'Advogado Associado',
-    image: 'https://images.pexels.com/photos/8422128/pexels-photo-8422128.jpeg?auto=compress&cs=tinysrgb&w=600',
+    name: 'Lucas Macedo',
+    role: 'Sócio Fundador',
+    image: '/lucas.jpg',
+    description: 'Advogado com 10 anos de atuação especializada em Direito Médico e da Saúde. Pós-graduado em Direito Público, em Direito Processual Civil e em Direito Médico e da Saúde. Conselheiro Seccional da OAB/Bahia. Secretário Geral da Comissão Especial de Direito Médico e da Saúde da OAB/BA. Autor de artigos científicos e capítulos de livros publicados. Organizador e autor das obras “Diálogos consensuais em Direito Médico” e “Estudo de Casos em Direito Médico e da Saúde”. Coordenador de Grupos de Pesquisa na área de Direito Médico e da Saúde.',
+  },
+  {
+    name: 'Ayala Faria',
+    role: 'Advogada Associada',
+    image: '/ayala.jpg',
     description: 'Especialista em processos ético-profissionais e defesa administrativa junto aos Conselhos de Classe.',
   },
   {
-    name: 'Dra. Ana Beatriz Costa',
+    name: 'Alice Firmino',
     role: 'Advogada Associada',
-    image: 'https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/alice.jpg',
+    description: 'Especializada em Direito da Saúde Suplementar e relações com operadoras de planos de saúde.',
+  },
+  {
+    name: 'Flavia Oliveira',
+    role: 'Advogada Associada',
+    image: '/flavia.jpg',
     description: 'Especializada em Direito da Saúde Suplementar e relações com operadoras de planos de saúde.',
   },
 ];
@@ -35,11 +47,11 @@ const TeamPage: React.FC = () => {
       {/* Hero Section */}
       <section className="relative py-20 bg-primary-900">
         <div className="absolute inset-0 opacity-20">
-          <img
-            src="https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
+          {/* <img
+            src=""
             alt="Background"
             className="object-cover w-full h-full"
-          />
+          /> */}
         </div>
         <div className="relative container">
           <div className="max-w-3xl">
@@ -60,10 +72,11 @@ const TeamPage: React.FC = () => {
           <SectionTitle
             title="Sócios Fundadores"
             subtitle="Liderança com experiência e comprometimento com a excelência jurídica."
+            subtitleAlign="left"
           />
 
           <div className="grid gap-8 mt-12 md:grid-cols-2">
-            {teamMembers.slice(0, 2).map((member, index) => (
+            {teamMembers.slice(0, 3).map((member, index) => (
               <div
                 key={index}
                 className="overflow-hidden bg-white rounded-lg shadow-md"
@@ -92,10 +105,11 @@ const TeamPage: React.FC = () => {
             <SectionTitle
               title="Advogados Associados"
               subtitle="Profissionais especializados que compõem nossa equipe jurídica."
+              subtitleAlign="left"
             />
 
             <div className="grid gap-8 mt-12 md:grid-cols-2">
-              {teamMembers.slice(2).map((member, index) => (
+              {teamMembers.slice(3).map((member, index) => (
                 <div
                   key={index}
                   className="overflow-hidden bg-white rounded-lg shadow-md"

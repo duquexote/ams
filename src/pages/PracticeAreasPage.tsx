@@ -9,11 +9,6 @@ const PracticeAreasPage: React.FC = () => {
       {/* Hero Section */}
       <section className="relative py-20 bg-primary-900">
         <div className="absolute inset-0 opacity-20">
-          <img
-            src="https://images.pexels.com/photos/5668859/pexels-photo-5668859.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
-            alt="Background"
-            className="object-cover w-full h-full"
-          />
         </div>
         <div className="relative container">
           <div className="max-w-3xl">
@@ -33,6 +28,7 @@ const PracticeAreasPage: React.FC = () => {
           <SectionTitle
             title="Nossos Serviços Especializados"
             subtitle="Atendemos profissionais da saúde e pacientes com foco em dois grandes pilares: Direito Médico e Direito da Saúde."
+            subtitleAlign="left"
           />
 
           <div className="grid gap-8 mt-12 md:grid-cols-2">
