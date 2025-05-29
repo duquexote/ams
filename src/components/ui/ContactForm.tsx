@@ -21,29 +21,38 @@ const ContactForm: React.FC<ContactFormProps> = ({ includeSubject = false }) => 
   const {
     register,
     handleSubmit,
-    reset,
     formState: { errors },
   } = useForm<FormData>();
 
-  const onSubmit = async (data: FormData) => {
+  // Número de WhatsApp do escritório (substitua pelo número correto)
+  const whatsappNumber = '5571996096498'; // Formato: código do país + DDD + número
+  
+  const onSubmit = (data: FormData) => {
     setIsSubmitting(true);
-    setSubmitError('');
     
     try {
-      // In a real implementation, this would send data to a backend
-      // For now, we'll simulate a successful submission after a delay
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      console.log('Form submitted:', data);
+      // Criar a mensagem formatada para o WhatsApp
+      const message = `Estou entrando em contato pelo site AMS Advogados\n\n**Nome Completo:** ${data.name}\n**E-mail:** ${data.email}\n**Telefone:** ${data.phone}${data.subject ? `\n**Assunto:** ${data.subject}` : ''}\n**Mensagem:** ${data.message}`;
+      
+      // Codificar a mensagem para URL
+      const encodedMessage = encodeURIComponent(message);
+      
+      // Criar o link do WhatsApp
+      const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+      
+      // Redirecionar para o WhatsApp
+      window.open(whatsappLink, '_blank');
       
       setSubmitSuccess(true);
-      reset();
       
       // Reset success message after 5 seconds
-      setTimeout(() => setSubmitSuccess(false), 5000);
+      setTimeout(() => {
+        setSubmitSuccess(false);
+        setIsSubmitting(false);
+      }, 3000);
     } catch (error) {
       setSubmitError('Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente.');
       console.error('Form submission error:', error);
-    } finally {
       setIsSubmitting(false);
     }
   };
@@ -145,7 +154,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ includeSubject = false }) => 
 
       {submitSuccess && (
         <div className="p-3 bg-success-100 text-success-800 rounded-md">
-          Mensagem enviada com sucesso! Entraremos em contato em breve.
+          Redirecionando para o WhatsApp com sua mensagem...
         </div>
       )}
 
