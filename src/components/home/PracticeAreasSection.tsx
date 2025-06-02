@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Gavel, Stethoscope, FileText, ShieldCheck } from 'lucide-react';
+import { Stethoscope, ShieldCheck } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
 
 const practiceAreas = [
@@ -15,18 +15,6 @@ const practiceAreas = [
     description: 'Atuamos em questões de saúde suplementar, defesa de hospitais, clínicas e proteção do direito à saúde.',
     icon: ShieldCheck,
     link: '/areas-de-atuacao/direito-da-saude',
-  },
-  {
-    title: 'Defesa em Processos Judiciais',
-    description: 'Representação técnica especializada em processos civis, criminais e indenizatórios envolvendo a saúde.',
-    icon: Gavel,
-    link: '/areas-de-atuacao/defesa-processo-judicial',
-  },
-  {
-    title: 'Processos Ético-Profissionais',
-    description: 'Defesa em sindicâncias e processos administrativos junto aos Conselhos de Medicina e outros órgãos.',
-    icon: FileText,
-    link: '/areas-de-atuacao/processos-eticos',
   },
 ];
 
