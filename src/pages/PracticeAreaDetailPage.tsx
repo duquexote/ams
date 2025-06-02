@@ -142,7 +142,7 @@ const PracticeAreaDetailPage: React.FC = () => {
                 key={index}
                 className="relative p-6 bg-white rounded-lg shadow-md"
               >
-                <div className="absolute flex items-center justify-center w-10 h-10 text-white rounded-full -top-5 -left-5 bg-primary-600">
+                <div className="absolute flex items-center justify-center w-10 h-10 text-white rounded-full -top-5 sm:-left-5 left-2 bg-primary-600">
                   {index + 1}
                 </div>
                 <h3 className="mb-3 text-xl font-bold font-serif text-primary-900">{step.title}</h3>

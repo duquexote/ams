@@ -21,11 +21,10 @@ const HeroSection: React.FC = () => {
             Direito Médico e da Saúde
           </div>
           <h1 className="mb-6 text-4xl font-bold text-white font-serif sm:text-5xl md:text-6xl animate-fade-in">
-            Protegendo Profissionais da Saúde com Excelência Jurídica
+          Seja profissional ou paciente, seus direitos na saúde precisam de proteção especializada.
           </h1>
           <p className="mb-8 text-xl text-white/90 animate-slide-up">
-            Direito Médico e da Saúde com atendimento humanizado e estratégias 
-            jurídicas personalizadas.
+          Defendemos profissionais da saúde e beneficiários de planos com excelência jurídica. Atendimento ágil no WhatsApp.
           </p>
           <div className="flex flex-wrap gap-4 animate-slide-up">
             <Link

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Target, Award, Heart } from 'lucide-react';
+import { Shield, Target, Award, Heart, MessageSquare, Lock } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
 
 const ValuesSection: React.FC = () => {
@@ -11,18 +11,28 @@ const ValuesSection: React.FC = () => {
     },
     {
       title: 'Visão',
-      description: 'Ser a maior referência em Direito Médico e da Saúde do Norte/Nordeste.',
+      description: 'Ser a maior referência de Direito Médico e da Saúde do Norte/Nordeste, reconhecido pela excelência no atendimento, qualidade técnica e compromisso com os clientes.',
       icon: Target,
     },
     {
-      title: 'Valores',
-      description: 'Acessibilidade, Empatia e Respeito, Excelência Técnica, Honestidade e Confiança.',
+      title: 'Excelência',
+      description: 'CBusca constante por aperfeiçoamento e atualização profissional, garantindo a prestação de serviços jurídicos de alto nível, desenvolvendo, para cada caso, a estratégia processual mais assertiva',
+      icon: Award,
+    },
+    {
+      title: 'Acessibilidade',
+      description: 'Garantir que todos tenham acesso à assistência de forma eficiente, clara e atenciosa, respeitando suas particularidades, priorizando célere atendimento e senso de urgência.',
+      icon: MessageSquare,
+    },
+    {
+      title: 'Empatia e Respeito',
+      description: 'Colocar-se no lugar do outro, exercendo uma escuta ativa, sem julgamentos, para entender suas necessidades e preocupações, especialmente em situações envolvendo saúde.',
       icon: Heart,
     },
     {
-      title: 'Excelência',
-      description: 'Comprometimento com os mais altos padrões de qualidade e atualização constante do conhecimento jurídico especializado.',
-      icon: Award,
+      title: 'Honestidade e Confiança',
+      description: 'Transparência nos diagnósticos dos riscos inerentes aos interesses dos nossos clientes e responsabilidade no cumprimento de prazos e compromissos.',
+      icon: Lock,
     },
   ];
 

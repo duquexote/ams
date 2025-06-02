@@ -1,4 +1,4 @@
-import { Gavel, Stethoscope, ShieldCheck, FileText} from 'lucide-react';
+import {Stethoscope, ShieldCheck } from 'lucide-react';
 
 export interface PracticeArea {
   id: string;
@@ -26,11 +26,20 @@ export const practiceAreas: PracticeArea[] = [
     icon: Stethoscope,
     description: 'Atuamos na defesa de médicos e profissionais da saúde em todas as esferas, garantindo a proteção de seus direitos e de sua reputação profissional. Nossa equipe possui vasta experiência em casos complexos envolvendo alegações de erro médico, processos éticos e questões contratuais.',
     causes: [
-      'Processos por alegação de erro médico',
-      'Sindicâncias e processos ético-profissionais',
-      'Questões contratuais com operadoras e clínicas',
-      'Defesa em processos cíveis e criminais',
-      'Assessoria preventiva para redução de riscos jurídicos'
+      'Defesa de processo judicial',
+      'Defesa de processo ético',
+      'Auxílio-moradia',
+      '1% FIES – abatimento proporcional',
+      'FIES – suspensão de pagamento',
+      'FIES – revisão para médicos',
+      'Consultoria empresarial',
+      'Adequação documental + LGPD',
+      'PJMED – adequação societária',
+      'CSLL – Equiparação hospitalar',
+      'Holding Médica',
+      'Ação de cobrança de honorários médicos',
+      'Descredenciamento',
+      'Pack de documentos'
     ],
     steps: [
       {
@@ -79,11 +88,25 @@ export const practiceAreas: PracticeArea[] = [
     icon: ShieldCheck,
     description: 'Prestamos consultoria e representação legal para instituições de saúde, planos de saúde e pacientes em questões relacionadas ao direito à saúde, regulação sanitária e saúde suplementar. Nossa atuação visa garantir a conformidade legal e a proteção dos direitos de todos os envolvidos.',
     causes: [
-      'Questões envolvendo planos de saúde',
-      'Acesso a tratamentos e medicamentos',
-      'Regulação sanitária e compliance',
-      'Judicialização da saúde',
-      'Direitos dos pacientes'
+      'Cancelamento de Contrato de Plano de Saúde',
+      'Cobertura (medicamentos de alto custo, medicamentos off label, medicamento sem previsão no Rol da ANS)',
+      'Medicamentos importados, tratamentos oncológicos, OPME, exames complexos',
+      'Cirurgias reconstrutivas, cirurgias robóticas, home care, TEA',
+      'Tratamentos para transtornos do neurodesenvolvimento, internação psiquiátrica',
+      'Cirurgia reparadora, redução mamária, ortognática',
+      'Coparticipação',
+      'Exclusão de dependente',
+      'Inclusão de dependente',
+      'Exclusão a pedido',
+      'Fracionamento do contrato/Alteração de titularidade',
+      'Descredenciamento',
+      'Revisão de reajustes anuais',
+      'Revisão de reajustes por faixa etária',
+      'Revisão de reajustes em planos antigos (anteriores a 1998)',
+      'Revisão de preço-médio (aposentadoria)',
+      'Upgrade/Downgrade da categoria do plano',
+      'Remissão',
+      'Reembolso'
     ],
     steps: [
       {
@@ -122,112 +145,6 @@ export const practiceAreas: PracticeArea[] = [
       {
         question: 'Quais os principais cuidados jurídicos que uma clínica deve ter?',
         answer: 'Recomendamos atenção especial à documentação de pacientes, termos de consentimento, contratos com profissionais, adequação à LGPD e cumprimento das normas sanitárias aplicáveis ao segmento específico.'
-      }
-    ]
-  },
-  {
-    id: 'defesa-processo-judicial',
-    title: 'Defesa de Processos Judiciais',
-    subtitle: 'Proteção jurídica em ações civis e criminais',
-    icon: Gavel,
-    description: 'Atuamos na defesa técnica de médicos e profissionais da saúde em processos judiciais, com foco na construção de teses sólidas e personalizadas. Nossa experiência em casos de responsabilidade profissional permite uma defesa eficaz e estratégica.',
-    causes: [
-      'Alegações de erro médico',
-      'Processos de indenização por danos',
-      'Ações por falha de comunicação médico-paciente',
-      'Questionamentos sobre consentimento informado',
-      'Processos relacionados a procedimentos estéticos'
-    ],
-    steps: [
-      {
-        title: 'Análise da documentação',
-        description: 'Estudo detalhado do prontuário, exames e toda documentação relevante.'
-      },
-      {
-        title: 'Diagnóstico jurídico',
-        description: 'Avaliação das vulnerabilidades e pontos fortes do caso.'
-      },
-      {
-        title: 'Definição da estratégia processual',
-        description: 'Planejamento da linha de defesa e argumentação técnica.'
-      },
-      {
-        title: 'Defesa e acompanhamento',
-        description: 'Representação em todas as fases processuais e audiências.'
-      }
-    ],
-    benefits: [
-      'Atendimento com urgência e clareza',
-      'Profundo conhecimento técnico na área médica',
-      'Equipe multidisciplinar dedicada',
-      'Histórico de sucesso em casos similares',
-      'Minimização de impactos na reputação profissional'
-    ],
-    faqs: [
-      {
-        question: 'O que devo fazer ao receber uma notificação judicial?',
-        answer: 'O primeiro passo é não responder diretamente e buscar imediatamente orientação jurídica especializada. Nosso escritório pode ser acionado em regime de urgência para análise inicial e primeiras providências.'
-      },
-      {
-        question: 'Posso ser responsabilizado por erros da equipe ou da instituição?',
-        answer: 'A responsabilização depende de diversos fatores, incluindo seu cargo, funções, relação contratual e o nexo causal entre sua atuação e o dano alegado. Analisamos caso a caso para determinar a estratégia adequada.'
-      },
-      {
-        question: 'Qual a importância do prontuário médico na minha defesa?',
-        answer: 'O prontuário é frequentemente a peça central da defesa, pois documenta todas as decisões e procedimentos realizados. Um prontuário bem elaborado, com registros claros e completos, é fundamental para demonstrar a adequação da conduta profissional.'
-      }
-    ]
-  },
-  {
-    id: 'processos-eticos',
-    title: 'Processos Ético-Profissionais',
-    subtitle: 'Defesa especializada junto aos Conselhos de Classe',
-    icon: FileText,
-    description: 'Oferecemos representação jurídica em sindicâncias e processos ético-disciplinares junto aos Conselhos Profissionais, como CRM, CRO, COREN e outros. Nossa atuação visa proteger o registro profissional e a reputação do profissional de saúde.',
-    causes: [
-      'Denúncias de pacientes aos Conselhos',
-      'Sindicâncias por questões publicitárias',
-      'Processos por conflitos entre profissionais',
-      'Questionamentos sobre procedimentos realizados',
-      'Infrações éticas alegadas por instituições'
-    ],
-    steps: [
-      {
-        title: 'Análise da denúncia',
-        description: 'Estudo detalhado da acusação e identificação dos pontos críticos.'
-      },
-      {
-        title: 'Preparação da defesa prévia',
-        description: 'Elaboração de argumentação técnica e ética fundamentada.'
-      },
-      {
-        title: 'Acompanhamento processual',
-        description: 'Presença em oitivas, depoimentos e sessões de julgamento.'
-      },
-      {
-        title: 'Recursos administrativos',
-        description: 'Quando necessário, interposição de recursos às instâncias superiores.'
-      }
-    ],
-    benefits: [
-      'Conhecimento profundo dos Códigos de Ética profissionais',
-      'Experiência em Conselhos Regionais e Federais',
-      'Abordagem discreta e confidencial',
-      'Alta taxa de arquivamento de denúncias',
-      'Proteção da reputação e do registro profissional'
-    ],
-    faqs: [
-      {
-        question: 'Quais são as possíveis penalidades em um processo ético?',
-        answer: 'As penalidades variam de advertência confidencial até cassação do registro profissional, dependendo da gravidade da infração e do histórico do profissional. Nossa atuação visa sempre a aplicação da penalidade mínima ou o arquivamento.'
-      },
-      {
-        question: 'O processo no Conselho pode gerar também um processo judicial?',
-        answer: 'Sim, processos éticos e judiciais são independentes, podendo tramitar simultaneamente. Entretanto, nossa estratégia contempla a defesa coordenada em ambas as esferas quando necessário.'
-      },
-      {
-        question: 'Quanto tempo dura um processo ético-profissional?',
-        answer: 'O prazo médio é de 1 a 2 anos, podendo variar conforme a complexidade do caso, a região e a estrutura do Conselho. Trabalhamos para a resolução mais ágil possível, com foco na preservação da sua carreira.'
       }
     ]
   }
