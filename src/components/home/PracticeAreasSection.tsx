@@ -28,11 +28,11 @@ const PracticeAreasSection: React.FC = () => {
           center={true}
         />
 
-        <div className="grid gap-8 mt-12 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="flex flex-wrap justify-center gap-8 mt-12 max-w-4xl mx-auto">
           {practiceAreas.map((area, index) => (
             <div
               key={index}
-              className="overflow-hidden transition-all bg-white border rounded-lg shadow-sm group hover:shadow-md border-neutral-200"
+              className="overflow-hidden transition-all bg-white border rounded-lg shadow-sm group hover:shadow-md border-neutral-200 w-full sm:w-[340px] md:w-[380px]"
             >
               <div className="p-6">
                 <div className="flex items-center justify-center w-12 h-12 mb-4 text-white rounded-full bg-primary-600 group-hover:bg-secondary-600 transition-colors">
