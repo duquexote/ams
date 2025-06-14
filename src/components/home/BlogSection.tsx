@@ -10,8 +10,8 @@ const BlogSection: React.FC = () => {
     <section className="py-16 bg-white sm:py-24">
       <div className="container">
         <SectionTitle
-          title="Conteúdos para quem vive o Direito da Saúde"
-          subtitle="Acompanhe nossos artigos, atualizações jurídicas, decisões recentes e conteúdos práticos. São mais de 2.000 textos exclusivos."
+          title="Novidades"
+          subtitle="Acompanhe artigos, atualizações jurídicas, decisões recentes e conteúdos práticos."
           center={true}
         />
 

@@ -2,6 +2,17 @@ import React from 'react';
 import SectionTitle from '../components/ui/SectionTitle';
 import ContactForm from '../components/ui/ContactForm';
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+// Import required modules
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
 const AboutPage: React.FC = () => {
   return (
     <>
@@ -32,14 +43,21 @@ const AboutPage: React.FC = () => {
                 center={false}
               />
               <p className="mb-6 text-lg text-neutral-700">
-                O AMS surgiu da necessidade de representar com excelência médicos, clínicas, 
-                hospitais e pacientes em suas demandas mais complexas. Atuamos com ética, 
-                técnica e senso de urgência, sempre buscando as melhores soluções para 
-                nossos clientes.
-              </p>
-              <p className="text-lg text-neutral-700">
-                Nossa trajetória é marcada por casos desafiadores e resultados expressivos, 
-                que nos consolidaram como referência em Direito Médico e da Saúde na região.
+              O AMS Advogados nasceu da união de três profissionais que compartilham a mesma paixão pela advocacia e um propósito comum: proteger e fortalecer os direitos de quem cuida da saúde das pessoas e também de quem precisa dela. 
+
+              <br/><br/>Fundado por Matheus Athayde, Lucas Macedo e Gabriela Sady, o escritório consolida uma trajetória que se iniciou muito antes da formação da sociedade. Após anos de atuação conjunta em grandes demandas de Direito Médico e da Saúde, os sócios decidiram formalizar a parceria e construir um escritório que refletisse os valores, a técnica e o compromisso que sempre os nortearam individualmente.
+
+              <br/><br/>Mais do que um escritório, o AMS é um projeto que combina excelência técnica, atuação ética e acolhimento genuíno — valores que norteiam cada atendimento, cada petição e cada orientação jurídica prestada. Nossa atuação está voltada à defesa de profissionais da saúde, instituições de saúde e beneficiários de planos de saúde, em todo o Brasil.
+
+              <br/><br/>Com sede em Salvador/BA e atendimento digital para todas as regiões, o AMS Advogados se destaca pela atuação altamente especializada, com equipe qualificada, atualizada e comprometida com resultados concretos.
+
+              <br/><br/>Valorizamos o estudo constante, o pensamento estratégico e a construção de uma relação de confiança com nossos clientes. Não oferecemos fórmulas prontas: cada caso é tratado de forma individual, com escuta ativa, planejamento rigoroso e comunicação clara. Sabemos que, por trás de cada demanda, há uma pessoa, uma família ou um profissional que precisa de amparo jurídico e, acima de tudo, respeito.
+              <br/><br/>Nossa atuação é marcada por três pilares:
+              <ul className="space-y-2 text-neutral-700">
+                <li>• Proteção dos beneficiários de planos de saúde, garantindo acesso ao tratamento médico adequado e à preservação de seus direitos contratuais</li>
+                <li>• Defesa técnica e combativa dos profissionais da saúde, em todas as esferas: judicial, ética, administrativa e consultiva</li>
+                <li>• Consultoria jurídica estratégica para empresas da área da saúde, promovendo segurança jurídica e prevenindo litígios.</li>
+              </ul>
               </p>
             </div>
             <div className="relative">
@@ -103,43 +121,33 @@ const AboutPage: React.FC = () => {
             subtitle="Um espaço moderno, acolhedor e funcional para melhor atender nossos clientes"
             center={true}
           />
-
-          <div className="grid gap-6 mt-12 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="overflow-hidden rounded-lg shadow-md">
-              <img
-                src="/recepcao.jpg"
-                alt="Recepção"
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-4">
-                <h4 className="text-lg font-semibold text-primary-900">Recepção</h4>
-                <p className="text-neutral-700">Ambiente acolhedor para receber nossos clientes</p>
-              </div>
-            </div>
-
-            <div className="overflow-hidden rounded-lg shadow-md">
-              <img
-                src="/sala-de-reuniao.jpg"
-                alt="Sala de Reuniões"
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-4">
-                <h4 className="text-lg font-semibold text-primary-900">Sala de Reuniões</h4>
-                <p className="text-neutral-700">Espaço para atendimentos e reuniões privativas</p>
-              </div>
-            </div>
-
-            <div className="overflow-hidden rounded-lg shadow-md">
-              <img
-                src="/area-de-trabalho.jpg"
-                alt="Área de Trabalho"
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-4">
-                <h4 className="text-lg font-semibold text-primary-900">Área de Trabalho</h4>
-                <p className="text-neutral-700">Ambiente integrado para nossa equipe</p>
-              </div>
-            </div>
+          
+          <div className="mt-12">
+            <Swiper
+              spaceBetween={30}
+              centeredSlides={true}
+              autoplay={{
+                delay: 3500,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Autoplay, Pagination, Navigation]}
+              className="rounded-lg overflow-hidden shadow-xl"
+              style={{ height: '500px' }}
+            >
+              {Array.from({ length: 11 }, (_, i) => i + 1).map((num) => (
+                <SwiperSlide key={num}>
+                  <img 
+                    src={`/estrutura/estrutura-${num}.jpg`} 
+                    alt={`Estrutura do escritório ${num}`} 
+                    className="w-full h-full object-cover"
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </section>

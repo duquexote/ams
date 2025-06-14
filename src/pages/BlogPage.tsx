@@ -40,7 +40,7 @@ const BlogPage: React.FC = () => {
               Blog
             </h1>
             <p className="text-xl text-white/80">
-              Conteúdos exclusivos sobre Direito Médico e da Saúde para profissionais e instituições.
+            Conteúdos sobre Direito Médico e da Saúde.
             </p>
           </div>
         </div>

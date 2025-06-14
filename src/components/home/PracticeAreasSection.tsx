@@ -6,13 +6,13 @@ import SectionTitle from '../ui/SectionTitle';
 const practiceAreas = [
   {
     title: 'Direito Médico',
-    description: 'Defendemos médicos e profissionais de saúde em processos judiciais, conselhos de classe e questões contratuais.',
+    description: 'Defendemos profissionais de saúde em processos éticos, administrativos e judiciais, como também atuamos para empresas da área da saúde, promovendo segurança jurídica e prevenindo litígios.',
     icon: Stethoscope,
     link: '/areas-de-atuacao/direito-medico',
   },
   {
     title: 'Direito da Saúde',
-    description: 'Atuamos em questões de saúde suplementar, defesa de hospitais, clínicas e proteção do direito à saúde.',
+    description: 'Defendemos beneficiários de planos de saúde a fim de garantir a preservação de direitos contratuais e legais.',
     icon: ShieldCheck,
     link: '/areas-de-atuacao/direito-da-saude',
   },
@@ -24,7 +24,7 @@ const PracticeAreasSection: React.FC = () => {
       <div className="container">
         <SectionTitle
           title="Áreas de Atuação"
-          subtitle="Atendemos profissionais da saúde e pacientes com foco em dois grandes pilares: Direito Médico e Direito da Saúde."
+          subtitle="Atendemos profissionais da saúde e beneficiários de planos de saúde com foco em dois grandes pilares: Direito Médico e Direito da Saúde."
           center={true}
         />
 

@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
                 <Facebook className="w-5 h-5" />
               </a>
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/ams.advogados/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-neutral-300 hover:text-white transition-colors"
@@ -99,16 +99,6 @@ const Footer: React.FC = () => {
                   Direito da Saúde
                 </Link>
               </li>
-              <li>
-                <Link to="/areas-de-atuacao/defesa-processo-judicial" className="text-neutral-300 hover:text-white transition-colors">
-                  Defesa em Processos Judiciais
-                </Link>
-              </li>
-              <li>
-                <Link to="/areas-de-atuacao/processos-eticos" className="text-neutral-300 hover:text-white transition-colors">
-                  Processos Ético-Profissionais
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -146,15 +136,6 @@ const Footer: React.FC = () => {
           <p className="text-neutral-400">
             &copy; {new Date().getFullYear()} AMS Advogados. Todos os direitos reservados.
           </p>
-          <div className="mt-2 space-x-4">
-            <Link to="/politica-de-privacidade" className="text-neutral-400 hover:text-white transition-colors">
-              Política de Privacidade
-            </Link>
-            <span className="text-neutral-700">|</span>
-            <Link to="/termos-de-uso" className="text-neutral-400 hover:text-white transition-colors">
-              Termos de Uso
-            </Link>
-          </div>
         </div>
       </div>
     </footer>
