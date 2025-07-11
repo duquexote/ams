@@ -24,7 +24,7 @@ export const practiceAreas: PracticeArea[] = [
     title: 'Direito Médico',
     subtitle: 'Defesa especializada para profissionais de saúde',
     icon: Stethoscope,
-    description: 'Atuamos na defesa de médicos e profissionais da saúde em todas as esferas, garantindo a proteção de seus direitos e de sua reputação profissional. Nossa equipe possui vasta experiência em casos complexos envolvendo alegações de erro médico, processos éticos e questões contratuais.',
+    description: 'Atuamos na defesa de médicos e demais profissionais da saúde em todas as instâncias — administrativa, ética e judicial — assegurando a proteção de seus direitos e da sua reputação profissional. Nossa equipe possui sólida experiência na condução de casos complexos, que envolvem desde sindicâncias e processos ético-disciplinares nos Conselhos Regionais, até demandas judiciais relacionadas à responsabilidade civil.',
     causes: [
       'Defesa de processo judicial',
       'Defesa de processo ético',
@@ -86,7 +86,7 @@ export const practiceAreas: PracticeArea[] = [
     title: 'Direito da Saúde',
     subtitle: 'Soluções jurídicas para o setor de saúde',
     icon: ShieldCheck,
-    description: 'Prestamos consultoria e representação legal para instituições de saúde, planos de saúde e pacientes em questões relacionadas ao direito à saúde, regulação sanitária e saúde suplementar. Nossa atuação visa garantir a conformidade legal e a proteção dos direitos de todos os envolvidos.',
+    description: 'Atuamos com consultoria e representação legal especializada na área do Direito da Saúde, com ênfase na defesa de beneficiários de planos de saúde diante de abusos praticados por operadoras. Nossa atuação abrange tanto a via administrativa — incluindo a formulação de Notificações de Intermediação Preliminar (NIP) junto à ANS — quanto a via judicial, por meio do ajuizamento de ações para garantir a cobertura de tratamentos, medicamentos, exames, internações, manutenção de contrato, revisão de reajustes e demais direitos assegurados em lei.',
     causes: [
       'Cancelamento de Contrato de Plano de Saúde',
       'Cobertura (medicamentos de alto custo, medicamentos off label, medicamento sem previsão no Rol da ANS)',
@@ -127,11 +127,11 @@ export const practiceAreas: PracticeArea[] = [
       }
     ],
     benefits: [
-      'Conhecimento específico da legislação de saúde',
-      'Experiência em negociações com operadoras de saúde',
-      'Abordagem preventiva para evitar litígios',
-      'Relacionamento estabelecido com órgãos reguladores',
-      'Resolução eficiente de conflitos'
+      'Atuação especializada em Direito da Saúde',
+      'Experiência na solução de conflitos com operadoras de planos de saúde',
+      'Intervenção jurídica rápida e assertiva para garantir o tratamento de saúde',
+      'Atuação administrativa estratégica junto à ANS',
+      'Compromisso com a proteção integral da saúde e da dignidade do beneficiário de plano de saúde'
     ],
     faqs: [
       {

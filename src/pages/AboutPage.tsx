@@ -26,7 +26,7 @@ const AboutPage: React.FC = () => {
               Quem Somos
             </h1>
             <p className="text-xl text-white/80">
-              Conheça nossa história, valores e compromisso com a excelência jurídica na área da saúde.
+            Conheça nossa história, valores e compromisso com a excelência jurídica na área médica e da saúde.
             </p>
           </div>
         </div>
@@ -39,7 +39,7 @@ const AboutPage: React.FC = () => {
             <div>
               <SectionTitle
                 title="Nossa História"
-                subtitle="Fundado por profissionais apaixonados pelo Direito e comprometidos com a defesa da saúde."
+                subtitle="Fundado por profissionais apaixonados pelo Direito e comprometidos com a defesa da medicina e da saúde"
                 center={false}
               />
               <p className="mb-6 text-lg text-neutral-700">
@@ -86,8 +86,7 @@ const AboutPage: React.FC = () => {
             <div className="p-8 bg-white rounded-lg shadow-md">
               <h3 className="mb-4 text-2xl font-bold font-serif text-primary-900">Missão</h3>
               <p className="text-neutral-700">
-                Promover a defesa de profissionais da saúde, assegurando a integridade 
-                ética e oferecendo assessoria jurídica especializada.
+              Promover a defesa de profissionais da saúde, assegurando a preservação da integridade ética e profissional, bem como oferecer assessoria jurídica especializada em saúde suplementar para proteger direitos dos beneficiários de planos de saúde.
               </p>
             </div>
 
@@ -102,11 +101,10 @@ const AboutPage: React.FC = () => {
             <div className="p-8 bg-white rounded-lg shadow-md">
               <h3 className="mb-4 text-2xl font-bold font-serif text-primary-900">Valores</h3>
               <ul className="space-y-2 text-neutral-700">
-                <li>• Ética e transparência</li>
-                <li>• Excelência técnica</li>
-                <li>• Atendimento humanizado</li>
-                <li>• Compromisso com resultados</li>
-                <li>• Inovação constante</li>
+                <li>• Acessibilidade: Garantir que todos tenham acesso à assistência de forma eficiente, clara e atenciosa, respeitando suas particularidades, priorizando célere atendimento e senso de urgência.</li>
+                <li>• Empatia e Respeito: Colocar-se no lugar do outro, exercendo uma escuta ativa, sem julgamentos, para entender suas necessidades e preocupações, especialmente em situações envolvendo saúde.</li>
+                <li>• Excelência Técnica: Busca constante por aperfeiçoamento e atualização profissional, garantindo a prestação de serviços jurídicos de alto nível, desenvolvendo, para cada caso, a estratégia processual mais assertiva.</li>
+                <li>• Honestidade e Confiança: Transparência nos diagnósticos dos riscos inerentes aos interesses dos nossos clientes e responsabilidade no cumprimento de prazos e compromissos.</li>
               </ul>
             </div>
           </div>
@@ -118,7 +116,7 @@ const AboutPage: React.FC = () => {
         <div className="container">
           <SectionTitle
             title="Nossa Estrutura"
-            subtitle="Um espaço moderno, acolhedor e funcional para melhor atender nossos clientes"
+            subtitle=""
             center={true}
           />
           

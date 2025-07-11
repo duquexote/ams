@@ -27,7 +27,7 @@ const PracticeAreasPage: React.FC = () => {
         <div className="container">
           <SectionTitle
             title="Nossos Serviços Especializados"
-            subtitle="Atendemos profissionais da saúde e pacientes com foco em dois grandes pilares: Direito Médico e Direito da Saúde."
+            subtitle="Atendemos profissionais da saúde e beneficiários de planos de saúde com foco em dois grandes pilares: Direito Médico e Direito da Saúde."
             subtitleAlign="left"
           />
 

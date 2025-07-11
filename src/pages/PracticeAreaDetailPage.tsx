@@ -127,33 +127,8 @@ const PracticeAreaDetailPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Process Section */}
-      <section className="py-16 bg-neutral-50">
-        <div className="container">
-          <SectionTitle
-            title="Como Funciona"
-            subtitle="Etapas do Atendimento Jurídico"
-            center={true}
-          />
-
-          <div className="grid gap-8 mt-12 sm:grid-cols-2 lg:grid-cols-4">
-            {practiceArea.steps.map((step, index) => (
-              <div
-                key={index}
-                className="relative p-6 bg-white rounded-lg shadow-md"
-              >
-                <div className="absolute flex items-center justify-center w-10 h-10 text-white rounded-full -top-5 sm:-left-5 left-2 bg-primary-600">
-                  {index + 1}
-                </div>
-                <h3 className="mb-3 text-xl font-bold font-serif text-primary-900">{step.title}</h3>
-                <p className="text-neutral-700">{step.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* FAQs Section */}
+      {/*
+      { FAQs Section }
       <section className="py-16 bg-white">
         <div className="container">
           <SectionTitle
@@ -175,7 +150,7 @@ const PracticeAreaDetailPage: React.FC = () => {
           </div>
         </div>
       </section>
-
+      */}
       {/* Contact Section */}
       <section className="py-16 bg-neutral-50">
         <div className="container">

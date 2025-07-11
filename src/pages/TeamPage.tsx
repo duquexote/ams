@@ -34,12 +34,6 @@ const teamMembers = [
     description: 'Advogada com atuação em Direito Médico e da Saúde. Pós-graduanda em Direito Médico, da Saúde e Bioética pela Faculdade Baiana de Direito. Membro da Comissão Especial de Direito Médico da OAB/BA.',
   },
   {
-    name: 'Flávia Oliveira',
-    role: 'Advogada Associada',
-    image: '/flavia.jpg',
-    description: 'Advogada com atuação nas áreas de Direito Criminal e Direito Médico e da Saúde. Pós-graduanda em Direito Médico e da Saúde, Direito Penal e Processual Penal. Membro da Comissão Especial de Direito Médico e da Saúde da OAB/BA.',
-  },
-  {
     name: 'Keila Catarine',
     role: 'Coordenadora de Marketing Digital',
     image: '/keila.JPG',

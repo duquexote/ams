@@ -10,12 +10,11 @@ const AboutSection: React.FC = () => {
           <div>
             <SectionTitle 
               title="Quem Somos" 
-              subtitle="O AMS Advogados é um escritório especializado na defesa de profissionais da saúde e na atuação estratégica em Direito Médico e da Saúde."
+              subtitle="O AMS Advogados nasceu da união de três profissionais que compartilham a mesma paixão pela advocacia e um propósito comum: proteger e fortalecer os direitos de quem cuida da saúde das pessoas e também de quem precisa dela."
               center={false}
             />
             <p className="mb-6 text-neutral-700">
-              Com anos de experiência e uma equipe altamente qualificada, buscamos sempre a excelência técnica, 
-              o atendimento humanizado e a construção de relações pautadas na confiança, ética e resultado.
+              Fundado por Matheus Athayde, Lucas Macedo e Gabriela Sady, o escritório consolida uma trajetória que se iniciou muito antes da formação da sociedade. Após anos de atuação conjunta em grandes demandas de Direito Médico e da Saúde, os sócios decidiram formalizar a parceria e construir um escritório que refletisse os valores, a técnica e o compromisso que sempre os nortearam individualmente.
             </p>
             <Link to="/sobre" className="btn btn-primary">
               Saiba mais sobre nós

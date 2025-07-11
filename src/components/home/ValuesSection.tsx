@@ -1,12 +1,12 @@
 import React from 'react';
-import { Shield, Target, Award, Heart, MessageSquare, Lock } from 'lucide-react';
+import { Shield, Target, Heart } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
 
 const ValuesSection: React.FC = () => {
   const values = [
     {
       title: 'Missão',
-      description: 'Promover a defesa de profissionais da saúde, assegurando a integridade ética e oferecendo assessoria jurídica especializada.',
+      description: 'Promover a defesa de profissionais da saúde, assegurando a preservação da integridade ética e profissional, bem como oferecer assessoria jurídica especializada em saúde suplementar para proteger direitos dos beneficiários de planos de saúde.',
       icon: Shield,
     },
     {
@@ -15,25 +15,10 @@ const ValuesSection: React.FC = () => {
       icon: Target,
     },
     {
-      title: 'Excelência',
-      description: 'CBusca constante por aperfeiçoamento e atualização profissional, garantindo a prestação de serviços jurídicos de alto nível, desenvolvendo, para cada caso, a estratégia processual mais assertiva',
-      icon: Award,
-    },
-    {
-      title: 'Acessibilidade',
-      description: 'Garantir que todos tenham acesso à assistência de forma eficiente, clara e atenciosa, respeitando suas particularidades, priorizando célere atendimento e senso de urgência.',
-      icon: MessageSquare,
-    },
-    {
-      title: 'Empatia e Respeito',
-      description: 'Colocar-se no lugar do outro, exercendo uma escuta ativa, sem julgamentos, para entender suas necessidades e preocupações, especialmente em situações envolvendo saúde.',
+      title: 'Valores',
+      description: '- Acessibilidade \n- Empatia e Respeito \n- Excelência Técnica \n- Honestidade e Confiança',
       icon: Heart,
-    },
-    {
-      title: 'Honestidade e Confiança',
-      description: 'Transparência nos diagnósticos dos riscos inerentes aos interesses dos nossos clientes e responsabilidade no cumprimento de prazos e compromissos.',
-      icon: Lock,
-    },
+    }
   ];
 
   return (
@@ -45,7 +30,7 @@ const ValuesSection: React.FC = () => {
           center={true}
         />
 
-        <div className="grid gap-8 mt-12 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 mt-12 sm:grid-cols-2 lg:grid-cols-3 justify-center mx-auto">
           {values.map((value, index) => (
             <div
               key={index}
@@ -55,7 +40,15 @@ const ValuesSection: React.FC = () => {
                 <value.icon className="w-6 h-6" />
               </div>
               <h3 className="mb-2 text-xl font-bold font-serif text-primary-900">{value.title}</h3>
-              <p className="text-neutral-700">{value.description}</p>
+              {value.title === 'Valores' ? (
+                <ul className="list-disc pl-5 text-neutral-700 space-y-1">
+                  {value.description.split('\n').map((item, i) => (
+                    <li key={i}>{item.replace('- ', '')}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="text-neutral-700">{value.description}</p>
+              )}
             </div>
           ))}
         </div>

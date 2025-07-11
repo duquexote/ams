@@ -14,8 +14,7 @@ const Footer: React.FC = () => {
               <Logo variant="light" />
             </div>
             <p className="mt-4 text-neutral-300">
-              Escritório especializado na defesa de profissionais da saúde e na atuação 
-              estratégica em Direito Médico e da Saúde.
+            Escritório especializado na defesa de profissionais da saúde e na proteção de direitos dos beneficiários de planos de saúde.
             </p>
             <div className="flex mt-6 space-x-4">
               <a 
@@ -109,20 +108,19 @@ const Footer: React.FC = () => {
               <li className="flex">
                 <MapPin className="w-5 h-5 mr-3 text-neutral-300 flex-shrink-0" />
                 <span className="text-neutral-300">
-                  Av. Exemplo, 1234, Sala 567<br />
-                  Bairro, Cidade - Estado, 00000-000
+                Rua Ewerton Visco, nº 290, Boulevard Side Empresarial, Sala 208, Caminho das Árvores, Salvador, Bahia, CEP: 41.820-022.
                 </span>
               </li>
               <li className="flex">
                 <Phone className="w-5 h-5 mr-3 text-neutral-300 flex-shrink-0" />
-                <a href="tel:+5500000000000" className="text-neutral-300 hover:text-white transition-colors">
-                  +55 (00) 00000-0000
+                <a href="tel:+5571997239870" className="text-neutral-300 hover:text-white transition-colors">
+                  +55 (71) 99723-9870
                 </a>
               </li>
               <li className="flex">
                 <Mail className="w-5 h-5 mr-3 text-neutral-300 flex-shrink-0" />
                 <a href="mailto:contato@amsadvogados.com.br" className="text-neutral-300 hover:text-white transition-colors">
-                  contato@amsadvogados.com.br
+                contato@amsadvs.com.br
                 </a>
               </li>
             </ul>
