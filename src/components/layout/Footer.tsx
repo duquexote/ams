@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
             </p>
             <div className="flex mt-6 space-x-4">
               <a 
-                href="https://facebook.com" 
+                href="https://www.facebook.com/profile.php?id=61566119786233" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-neutral-300 hover:text-white transition-colors"
@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
                 <Instagram className="w-5 h-5" />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/company/athayde-macedo-e-sady-advogados/?viewAsMember=true" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-neutral-300 hover:text-white transition-colors"

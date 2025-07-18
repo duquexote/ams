@@ -25,7 +25,7 @@ const HeroSection: React.FC = () => {
           <div className="inline-block px-4 py-1 mb-4 text-sm font-medium rounded-full bg-secondary-500 text-white animate-fade-in">
             Direito Médico e da Saúde
           </div>
-          <h1 className="mb-6 text-4xl font-bold text-white font-serif sm:text-5xl md:text-6xl animate-fade-in">
+          <h1 className="mb-6 text-2xl font-bold text-white font-serif sm:text-3xl md:text-4xl animate-fade-in">
           Defendemos beneficiários de planos de saúde e profissionais da saúde com excelência jurídica. Atendimento ágil no WhatsApp.
           </h1>
           <div className="flex flex-wrap gap-4 animate-slide-up justify-center md:justify-start">

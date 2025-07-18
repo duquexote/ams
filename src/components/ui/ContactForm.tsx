@@ -25,7 +25,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ includeSubject = false }) => 
   } = useForm<FormData>();
 
   // Número de WhatsApp do escritório (substitua pelo número correto)
-  const whatsappNumber = '5571996096498'; // Formato: código do país + DDD + número
+  const whatsappNumber = '557197239870'; // Formato: código do país + DDD + número
   
   const onSubmit = (data: FormData) => {
     setIsSubmitting(true);

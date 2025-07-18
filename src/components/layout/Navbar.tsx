@@ -17,7 +17,6 @@ const navLinks = [
     ],
   },
   { name: 'Blog', path: '/blog' },
-  { name: 'Publicações', path: '/publicacoes' },
   { name: 'Contato', path: '/contato' },
 ];
 

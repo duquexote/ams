@@ -26,7 +26,7 @@ const TeamSection: React.FC = () => {
       <div className="container">
         <SectionTitle
           title="Um Time Especializado em Direito Médico e da Saúde"
-          subtitle="Conheça os sócios, advogados associados e profissionais que fazem do AMS uma referência jurídica na área médica."
+          subtitle="Conheça os sócios, advogados associados e profissionais que fazem do AMS uma referência jurídica."
           center={true}
         />
 

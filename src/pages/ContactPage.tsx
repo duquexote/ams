@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import ContactForm from '../components/ui/ContactForm';
 
 const ContactPage: React.FC = () => {
   return (
@@ -18,8 +19,7 @@ const ContactPage: React.FC = () => {
               </div>
               <div>
                 <h3 className="font-medium text-lg">Telefone</h3>
-                <p className="text-gray-600">(11) 3456-7890</p>
-                <p className="text-gray-600">(11) 98765-4321</p>
+                <p className="text-gray-600">55 (71) 99723-9870</p>
               </div>
             </div>
             
@@ -29,8 +29,7 @@ const ContactPage: React.FC = () => {
               </div>
               <div>
                 <h3 className="font-medium text-lg">Email</h3>
-                <p className="text-gray-600">contato@amsadvogados.com.br</p>
-                <p className="text-gray-600">atendimento@amsadvogados.com.br</p>
+                <p className="text-gray-600">contato@amsadvs.com.br</p>
               </div>
             </div>
             
@@ -40,9 +39,9 @@ const ContactPage: React.FC = () => {
               </div>
               <div>
                 <h3 className="font-medium text-lg">Endereço</h3>
-                <p className="text-gray-600">Av. Paulista, 1000, 15º andar</p>
-                <p className="text-gray-600">Bela Vista, São Paulo - SP</p>
-                <p className="text-gray-600">CEP: 01310-100</p>
+                <p className="text-gray-600">Rua Ewerton Visco, nº 290, Boulevard Side Empresarial, Sala 208</p>
+                <p className="text-gray-600">Caminho das Árvores, Salvador, Bahia</p>
+                <p className="text-gray-600">CEP: 41.820-022.</p>
               </div>
             </div>
           </div>
@@ -51,75 +50,7 @@ const ContactPage: React.FC = () => {
         {/* Formulário de contato */}
         <div className="bg-white p-8 rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold mb-6">Envie uma mensagem</h2>
-          
-          <form className="space-y-4">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                Nome completo
-              </label>
-              <input
-                type="text"
-                id="name"
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
-                placeholder="Seu nome"
-              />
-            </div>
-            
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
-                placeholder="seu.email@exemplo.com"
-              />
-            </div>
-            
-            <div>
-              <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                Telefone
-              </label>
-              <input
-                type="tel"
-                id="phone"
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
-                placeholder="(00) 00000-0000"
-              />
-            </div>
-            
-            <div>
-              <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
-                Assunto
-              </label>
-              <input
-                type="text"
-                id="subject"
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
-                placeholder="Assunto da mensagem"
-              />
-            </div>
-            
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                Mensagem
-              </label>
-              <textarea
-                id="message"
-                rows={5}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
-                placeholder="Digite sua mensagem aqui..."
-              ></textarea>
-            </div>
-            
-            <button
-              type="submit"
-              className="w-full bg-blue-600 text-white py-3 px-4 rounded-md hover:bg-blue-700 transition-colors"
-            >
-              Enviar mensagem
-            </button>
-          </form>
+          <ContactForm includeSubject={true} />
         </div>
       </div>
     </div>

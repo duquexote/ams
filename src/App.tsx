@@ -22,7 +22,9 @@ function App() {
         <Route path="areas-de-atuacao/:slug" element={<PracticeAreaDetailPage />} />
         <Route path="blog" element={<BlogPage />} />
         <Route path="blog/:slug" element={<BlogArticlePage />} />
+        {/* Rota temporariamente desativada
         <Route path="publicacoes" element={<PublicationsPage />} />
+        */}
         <Route path="contato" element={<ContactPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
