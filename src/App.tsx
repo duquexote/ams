@@ -9,6 +9,7 @@ import BlogPage from './pages/BlogPage';
 import BlogArticlePage from './pages/BlogArticlePage';
 import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
+import AdminPage from './pages/AdminPage';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="publicacoes" element={<PublicationsPage />} />
         */}
         <Route path="contato" element={<ContactPage />} />
+        <Route path="admin" element={<AdminPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>

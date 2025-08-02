@@ -1,23 +1,35 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getArticleBySlug, getRelatedArticles } from '../data/blogArticles';
-import { BlogArticle } from '../types/blog';
+import { articlesService, SupabaseArticle } from '../services/supabase';
 
 const BlogArticlePage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
-  const [article, setArticle] = useState<BlogArticle | null>(null);
-  const [relatedArticles, setRelatedArticles] = useState<BlogArticle[]>([]);
+  const [article, setArticle] = useState<SupabaseArticle | null>(null);
+  const [relatedArticles, setRelatedArticles] = useState<SupabaseArticle[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (slug) {
-      const foundArticle = getArticleBySlug(slug);
-      if (foundArticle) {
-        setArticle(foundArticle);
-        setRelatedArticles(getRelatedArticles(foundArticle.id, 3));
+    const fetchArticle = async () => {
+      if (slug) {
+        try {
+          const foundArticle = await articlesService.getBySlug(slug);
+          setArticle(foundArticle);
+          
+          if (foundArticle) {
+            // Buscar artigos relacionados (mesma categoria)
+            const allArticles = await articlesService.getByCategory(foundArticle.category);
+            const filtered = allArticles.filter(a => a.id !== foundArticle.id).slice(0, 3);
+            setRelatedArticles(filtered);
+          }
+        } catch (error) {
+          console.error('Erro ao buscar artigo:', error);
+        } finally {
+          setLoading(false);
+        }
       }
-      setLoading(false);
-    }
+    };
+    
+    fetchArticle();
   }, [slug]);
 
   if (loading) {

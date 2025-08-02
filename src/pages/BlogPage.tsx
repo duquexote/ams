@@ -1,22 +1,37 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { getPaginatedArticles } from '../data/blogArticles';
-import { BlogArticle } from '../types/blog';
+import { articlesService, SupabaseArticle } from '../services/supabase';
 import SectionTitle from '../components/ui/SectionTitle';
 
 const BlogPage: React.FC = () => {
-  const [articles, setArticles] = useState<BlogArticle[]>([]);
+  const [articles, setArticles] = useState<SupabaseArticle[]>([]);
   const [totalPages, setTotalPages] = useState(1);
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchArticles = () => {
+    const fetchArticles = async () => {
       setLoading(true);
-      const { articles: fetchedArticles, totalPages: pages } = getPaginatedArticles(currentPage, 9);
-      setArticles(fetchedArticles);
-      setTotalPages(pages);
-      setLoading(false);
+      try {
+        // Obter o total de artigos para calcular a paginação
+        const allArticles = await articlesService.getAll();
+        const totalItems = allArticles.length;
+        const itemsPerPage = 9;
+        const pages = Math.ceil(totalItems / itemsPerPage);
+        
+        // Calcular o offset para a paginação
+        const offset = (currentPage - 1) * itemsPerPage;
+        
+        // Obter os artigos da página atual
+        const paginatedArticles = await articlesService.getPaginated(offset, itemsPerPage);
+        
+        setArticles(paginatedArticles);
+        setTotalPages(pages);
+      } catch (error) {
+        console.error('Erro ao carregar artigos:', error);
+      } finally {
+        setLoading(false);
+      }
     };
 
     fetchArticles();
