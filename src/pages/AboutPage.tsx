@@ -139,7 +139,7 @@ const AboutPage: React.FC = () => {
               {Array.from({ length: 10 }, (_, i) => i + 1).map((num) => (
                 <SwiperSlide key={num}>
                   <img 
-                    src={`/estrutura/estrutura-${num}.webp`} 
+                    src={`/estrutura/estrutura_${num}.webp`} 
                     alt={`Estrutura do escritório ${num}`} 
                     className="w-full h-full object-cover"
                   />
