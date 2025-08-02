@@ -7,7 +7,6 @@ import PracticeAreasPage from './pages/PracticeAreasPage';
 import PracticeAreaDetailPage from './pages/PracticeAreaDetailPage';
 import BlogPage from './pages/BlogPage';
 import BlogArticlePage from './pages/BlogArticlePage';
-import PublicationsPage from './pages/PublicationsPage';
 import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
 

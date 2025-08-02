@@ -64,7 +64,7 @@ const AboutPage: React.FC = () => {
               <div className="absolute -bottom-6 -left-6 w-40 h-40 bg-primary-100 rounded-lg z-0"></div>
               <div className="absolute -top-6 -right-6 w-40 h-40 bg-secondary-100 rounded-lg z-0"></div>
               <img
-                src="/equipe.jpg"
+                src="/equipe.w ebp"
                 alt="Escritório AMS Advogados"
                 className="relative z-10 w-full h-auto rounded-lg shadow-xl"
               />
@@ -136,10 +136,10 @@ const AboutPage: React.FC = () => {
               className="rounded-lg overflow-hidden shadow-xl"
               style={{ height: '500px' }}
             >
-              {Array.from({ length: 11 }, (_, i) => i + 1).map((num) => (
+              {Array.from({ length: 10 }, (_, i) => i + 1).map((num) => (
                 <SwiperSlide key={num}>
                   <img 
-                    src={`/estrutura/estrutura-${num}.jpg`} 
+                    src={`/estrutura/estrutura-${num}.webp`} 
                     alt={`Estrutura do escritório ${num}`} 
                     className="w-full h-full object-cover"
                   />

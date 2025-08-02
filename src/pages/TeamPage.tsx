@@ -6,37 +6,37 @@ const teamMembers = [
   {
     name: 'Matheus Athayde',
     role: 'Sócio Fundador',
-    image: '/matheus.jpg',
+    image: '/matheus.webp',
     description: 'Advogado especialista em Direito Médico e da Saúde e em Advocacia Cível, além de possuir cursos de extensão em Saúde Suplementar, com atuação profissional há mais de 11 anos. Membro da Comissão Especial de Direito Médico e da Saúde da OAB/BA. Autor de artigos e palestrante.',
   },
   {
     name: 'Gabriela Sady',
     role: 'Sócia Fundadora',
-    image: '/gabriela.jpg',
+    image: '/gabriela.webp',
     description: 'Advogada especializada em Direito Médico e da Saúde, com mais de 10 anos de experiência. Pós-graduada em Direito Médico e Hospitalar e em Direito Público. Professora do curso de Pós Graduação em Direito Médico e da Saúde do CERS. Defensora Dativa do CREMEB. Secretária-Geral da Comissão Especial de Direito Médico e da Saúde da OAB/BA. Autora de artigos científicos e capítulos de livros publicados. Organizadora e autora das obras "Diálogos consensuais em Direito Médico" e "Estudo de Casos em Direito Médico e da Saúde". Coordenadora de Grupos de Pesquisa na área de Direito Médico e da Saúde.',
   },
   {
     name: 'Lucas Macedo',
     role: 'Sócio Fundador',
-    image: '/lucas.jpg',
+    image: '/lucas.webp',
     description: 'Advogado especialista em Direito da Medicina pela Universidade de Coimbra. Pós-graduado em Direito Público pela Faculdade Baiana de Direito. Bacharel em Direito pela Universidade Salvador. Organizador e coautor das obras “Advocacia Consensual em Direito Médico” e “Estudos de Casos em Direito Médico e da Saúde”. Autor de artigos científicos e capítulos de livros na área de Direito Médico e da Saúde. Conselheiro Seccional da Ordem dos Advogados do Brasil – Seccional Bahia (2022-2024). Foi Secretário-Geral da Comissão Especial de Direito Médico e da Saúde da Ordem dos Advogados do Brasil – Seccional Bahia (2022-2024). Presidente da Comissão Especial de Direito Médico da Ordem dos Advogados do Brasil – Seccional Bahia (2025-). Defensor dativo do Conselho Regional de Medicina do Estado da Bahia – CREMEB (2020-2024). Assessor jurídico do Conselho Regional de Medicina do Estado da Bahia – CREMEB (2024-).',
   },
   {
     name: 'Ayala Silva Faria',
     role: 'Advogada Associada',
-    image: '/ayala.jpg',
+    image: '/ayala.webp',
     description: 'Advogada com atuação em Direito Médico e da Saúde. Pós-graduanda em Direito Médico e da Saúde e em Direito Civil e Processual Civil. Membro da Comissão Especial de Direito Médico da OAB/BA.',
   },
   {
     name: 'Maria Alice Lyra Firmino',
     role: 'Advogada Associada',
-    image: '/alice.jpg',
+    image: '/alice.webp',
     description: 'Advogada com atuação em Direito Médico e da Saúde. Pós-graduanda em Direito Médico, da Saúde e Bioética pela Faculdade Baiana de Direito. Membro da Comissão Especial de Direito Médico da OAB/BA.',
   },
   {
     name: 'Keila Catarine',
     role: 'Coordenadora de Marketing Digital',
-    image: '/keila.JPG',
+    image: '/keila.webp',
     description: 'Responsável pela comunicação institucional e estratégias digitais do AMS Advogados, com foco em posicionamento de autoridade no segmento de Direito Médico e da Saúde.',
   },
 ];

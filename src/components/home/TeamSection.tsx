@@ -6,17 +6,17 @@ const teamMembers = [
   {
     name: 'Matheus Athayde',
     role: 'Sócio Fundador',
-    image: '/matheus.jpg',
+    image: '/matheus.webp',
   },
   {
     name: 'Gabriela Sady',
     role: 'Sócia Fundadora',
-    image: '/gabriela.jpg',
+    image: '/gabriela.webp',
   },
   {
     name: 'Lucas Macedo',
     role: 'Sócio Fundador',
-    image: '/lucas.jpg',
+    image: '/lucas.webp',
   },
 ];
 

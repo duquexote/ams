@@ -7,12 +7,12 @@ const HeroSection: React.FC = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/topo-mobile.png"
+          src="/topo-mobile.webp"
           alt="Medical Law Background"
           className="object-cover w-full h-full md:hidden"
         />
         <img
-          src="/topo-web.png"
+          src="/topo-web.webp"
           alt="Medical Law Background"
           className="hidden md:block object-cover w-full h-full"
         />
