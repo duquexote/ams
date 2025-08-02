@@ -24,7 +24,7 @@ const AboutSection: React.FC = () => {
             <div className="absolute -bottom-6 -left-6 w-40 h-40 bg-primary-100 rounded-lg z-0"></div>
             <div className="absolute -top-6 -right-6 w-40 h-40 bg-secondary-100 rounded-lg z-0"></div>
             <img
-              src="/quem-somos.webp"
+              src="/quem_somos.webp"
               alt="Equipe AMS Advogados"
               className="relative z-10 w-full h-auto rounded-lg shadow-xl"
             />
